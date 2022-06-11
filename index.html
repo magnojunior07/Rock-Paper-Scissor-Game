@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Rock Paper Scissor Game</title>
+</head>
+<body>
+    <header>
+        <h1 class="h-title">
+            Rock Paper Scissor Game
+        </h1>
+    </header>
+    <section class="main">
+        <div class="scoreboard">
+            <div id="player-score" class="badge">
+                Player
+            </div>            
+            <div id="computer-score" class="badge">
+                Computer
+            </div>
+            <span id="p-score">0</span>:<span id="c-score">0</span>            
+        </div>
+        <h1 class="result"></h1>
+        <div class="choices">
+            <span class="choice" id="rock"><img src="./assets/imgs/rock.png" alt="pedra"></span>
+            <span class="choice" id="paper"><img src="./assets/imgs/paper.png" alt="papel"></span>
+            <span class="choice" id="scissor"><img src="./assets/imgs/scissor.png" alt="tesoura"></span>
+        </div>
+    </section>
+</body>
+</html>
