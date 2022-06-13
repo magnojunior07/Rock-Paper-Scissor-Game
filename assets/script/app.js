@@ -3,10 +3,10 @@ const paper = document.getElementById('p')
 const scissor = document.getElementById('s')
 const playerScore = document.getElementById('p-score')
 const compScore = document.getElementById('c-score')
+const result = document.getElementById('result')
+const restartBtn = document.getElementById('restart')
 let playerScoreValue = 0
 let compScoreValue = 0
-const result = document.getElementById('result')
-
 
 function getCompChoice() {
     let choices = ['r', 'p', 's']
@@ -113,4 +113,12 @@ paper.addEventListener('click', ()=> {
 })
 scissor.addEventListener('click', ()=> {
    game('s')
+})
+
+restartBtn.addEventListener('click', () => {
+    compScoreValue = 0
+    playerScoreValue = 0
+    compScore.innerHTML = 0
+    playerScore.innerHTML = 0
+    result.innerHTML = ''
 })

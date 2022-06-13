@@ -92,3 +92,23 @@ header {
 .draw img{
     border: solid 3px #696969;
 }
+
+.restart-btn{
+    margin: 20px auto;
+    width: 200px;
+    text-align: center;
+}
+
+#restart {
+    margin-top: 10%;
+    font-size: 20px;
+    background-color: #e2584d;
+    color: #FFFFFF;
+    padding: 2px 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+#restart:hover {
+    cursor: pointer;
+}
