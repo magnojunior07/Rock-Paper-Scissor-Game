@@ -61,7 +61,7 @@ header {
     margin-top: 3%;
 }
 
-#paper, #scissor {
+#p, #s {
     margin-left: 2%;
 }
 
@@ -78,5 +78,17 @@ header {
 
 .img:hover {
     cursor: pointer;
-    border-color: #03b4b4;
+    background-color: #03b4b4;
+}
+
+.win img{
+    border: solid 3px #0eb91d;
+}
+
+.loss img{
+    border: solid 3px #e2584d;
+}
+
+.draw img{
+    border: solid 3px #696969;
 }

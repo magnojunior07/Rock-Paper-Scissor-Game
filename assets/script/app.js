@@ -1,6 +1,6 @@
-const rock = document.getElementById('rock')
-const paper = document.getElementById('paper')
-const scissor = document.getElementById('scissor')
+const rock = document.getElementById('r')
+const paper = document.getElementById('p')
+const scissor = document.getElementById('s')
 const playerScore = document.getElementById('p-score')
 const compScore = document.getElementById('c-score')
 let playerScoreValue = 0
@@ -44,6 +44,8 @@ function win(userChoice, compChoice) {
     <h5 class="fChoice">Sua escolha: ${toWord(userChoice)}
     <br>
     Escolha da máquina: ${toWord(compChoice)}</h5>`
+    document.getElementById(userChoice).classList.add('win')
+    setTimeout(() => document.getElementById(userChoice).classList.remove('win'), 1000)
 }
 
 function loss(userChoice, compChoice) {
@@ -54,6 +56,8 @@ function loss(userChoice, compChoice) {
     <h5 class="fChoice">Sua escolha: ${toWord(userChoice)}
     <br>
     Escolha da máquina: ${toWord(compChoice)}</h5>`
+    document.getElementById(userChoice).classList.add('loss')
+    setTimeout(() => document.getElementById(userChoice).classList.remove('loss'), 1000)
 }
 
 function draw(userChoice, compChoice) {
@@ -62,6 +66,8 @@ function draw(userChoice, compChoice) {
     <h5 class="fChoice">Sua escolha: ${toWord(userChoice)}
     <br>
     Escolha da máquina: ${toWord(compChoice)}</h5>`
+    document.getElementById(userChoice).classList.add('draw')
+    setTimeout(() => document.getElementById(userChoice).classList.remove('draw'), 1000)
 }
 
 
@@ -72,7 +78,7 @@ function game(userChoice) {
             loss('r', 'p')
         break
         case 'pr':
-            win('r', 'p')
+            win('p', 'r')
         break
         case 'sp':
             win('s', 'p')
@@ -106,5 +112,5 @@ paper.addEventListener('click', ()=> {
     game('p')
 })
 scissor.addEventListener('click', ()=> {
-    game('s')
+   game('s')
 })
