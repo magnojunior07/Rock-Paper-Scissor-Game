@@ -31,7 +31,7 @@ header {
     position: relative;
 }
 
-.result {
+#result {
     color: #FFFFFF;
     text-align: center;
 }
@@ -65,13 +65,18 @@ header {
     margin-left: 2%;
 }
 
-.choice img {
+.fChoice {
+    text-decoration: underline;
+}
+
+.img {
     height: 80px;
     border: solid 3px #FFFFFF;
     border-radius: 50%;
+    transition: all 0.5s ease;
 }
 
-.choice img:hover {
+.img:hover {
     cursor: pointer;
     border-color: #03b4b4;
 }
