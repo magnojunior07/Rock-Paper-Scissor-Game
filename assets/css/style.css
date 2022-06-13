@@ -45,14 +45,14 @@ header {
 #player-score {
     position: absolute;
     top: 35%;
-    left: -15%;
+    left: -25%;
     border-radius: 4px;
 }
 
 #computer-score {
     position: absolute;
     top: 35%;
-    right: -20%;
+    right: -35%;
     border-radius: 4px;
 }
 
